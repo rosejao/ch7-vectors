@@ -1,40 +1,44 @@
-# Exercise 1: creating and operating on vectors
+# Exercise 1: creating and accessing lists
 
-# Create a vector `names` that contains your name and the names of 2 people 
-# next to you. Print the vector.
+# Create a vector `my_breakfast` of everything you ate for breakfast
+my_breakfast <- c("strawberries", "yogurt", "granola")
 
+# Create a vector `my_lunch` of everything you ate (or will eat) for lunch
+my_lunch <- c("sandwich", "orange", "goldfish")
 
-# Use the colon operator : to create a vector `n` of numbers from 10:49
+# Create a list `meals` that has contains your breakfast and lunch
+meals <- list(breakfast = my_breakfast, lunch = my_lunch)
+print(meals)
+#
 
+# Add a "dinner" element to your `meals` list that has what you plan to eat 
+# for dinner
+my_dinner <- c("pad thai", "rice")
+meals <- list(breakfast = my_breakfast, lunch = my_lunch, dinner = my_dinner)
+print(meals)
 
-# Use the `length()` function to get the number of elements in `n`
+# Use dollar notation to extract your `dinner` element from your list
+# and save it in a vector called 'dinner'
+meals$dinner
 
-
-# Add 1 to each element in `n` and print the result
-
-
-# Create a vector `m` that contains the numbers 10 to 1 (in that order). 
-# Hint: use the `seq()` function
-
-
-# Subtract `m` FROM `n`. Note the recycling!
-
-
-# Use the `seq()` function to produce a range of numbers from -5 to 10 in `0.1`
-# increments. Store it in a variable `x_range`
-
-
-# Create a vector `sin_wave` by calling the `sin()` function on each element 
-# in `x_range`.
+# Use double-bracket notation to extract your `lunch` element from your list
+# and save it in your list as the element at index 5 (no reason beyond practice)
 
 
-# Create a vector `cos_wave` by calling the `cos()` function on each element 
-# in `x_range`.
+# Use single-bracket notation to extract your breakfast and lunch from your list
+# and save them to a list called `early_meals`
 
 
-# Create a vector `wave` by multiplying `sin_wave` and `cos_wave` together, then
-# adding `sin_wave` to the product
+
+### Challenge ###
+
+# Create a list that has the number of items you ate for each meal
+# Hint: use the `lappy()` function to apply the `length()` function to each item
 
 
-# Use the `plot()` function to plot your `wave`!
+# Write a function `add_pizza` that adds pizza to a given meal vector, and
+# returns the pizza-fied vector
+
+
+# Create a vector `better_meals` that is all your meals, but with pizza!
 
